@@ -25,6 +25,7 @@ function ReviewProduct(props) {
     let loadAllReview = async () => {
 
         let res = await getAllReviewByProductIdService(id)
+        console.log(res)
         if (res && res.errCode === 0) {
             let count5 = res.data.filter(item => item.star === 5)
             let count4 = res.data.filter(item => item.star === 4)

@@ -56,7 +56,7 @@ let getAllReviewByProductId = (id) => {
                                     exclude: ['password']
                                 },
                             })
-                        res[i].user.image = new Buffer(res[i].user.image, 'base64').toString('binary')
+                        // res[i].user.image = new Buffer(res[i].user.image, 'base64').toString('binary')
                     }
                 }
 
